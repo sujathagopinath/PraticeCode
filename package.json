@@ -6,8 +6,14 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eslint index.js src/ && node index.js",
+    "start": "node index.js",
+    "build": "eslint index.js src/ && node index.js",
     "type": "module"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit": "eslint src/ --fix"
+    }
   },
   "keywords": [],
   "author": "",
@@ -16,7 +22,8 @@
     "babel-eslint": "^10.1.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "mongoose": "^6.6.4"
+    "mongoose": "^6.6.4",
+    "eslint": "8.29.0"
   },
   "devDependencies": {
     "eslint": "^8.29.0",

@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "extends": "standard",
   "overrides": [],
@@ -14,5 +15,6 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"]
-  }
+  },
+  "ignorePatterns": ["**/config/*.json"]
 }
